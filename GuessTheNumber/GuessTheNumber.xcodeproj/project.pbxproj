@@ -13,6 +13,7 @@
 		843BB69123D766F200DF396B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BB68F23D766F200DF396B /* Main.storyboard */; };
 		843BB69323D766F400DF396B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843BB69223D766F400DF396B /* Assets.xcassets */; };
 		843BB69623D766F400DF396B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BB69423D766F400DF396B /* LaunchScreen.storyboard */; };
+		843BB69E23D76F9100DF396B /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB69D23D76F9100DF396B /* GameSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		843BB69223D766F400DF396B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843BB69523D766F400DF396B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843BB69723D766F400DF396B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843BB69D23D76F9100DF396B /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		843BB67D23D766F200DF396B = {
 			isa = PBXGroup;
 			children = (
+				843BB69D23D76F9100DF396B /* GameSettings.swift */,
 				843BB68823D766F200DF396B /* GuessTheNumber */,
 				843BB68723D766F200DF396B /* Products */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843BB69E23D76F9100DF396B /* GameSettings.swift in Sources */,
 				843BB68E23D766F200DF396B /* ViewController.swift in Sources */,
 				843BB68A23D766F200DF396B /* AppDelegate.swift in Sources */,
 				843BB68C23D766F200DF396B /* SceneDelegate.swift in Sources */,

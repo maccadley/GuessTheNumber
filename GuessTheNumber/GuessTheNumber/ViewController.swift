@@ -9,12 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var playerGuess: UITextView!
+    @IBOutlet weak var guessTip: UILabel!
+    @IBOutlet weak var victoryText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
     }
 
 
+    @IBAction func checkNumber(_ sender: UIButton) {
+    }
+    
+    
+    
+    
 }
 
