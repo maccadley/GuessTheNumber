@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		843BB66A23D765CA00DF396B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB66923D765CA00DF396B /* AppDelegate.swift */; };
-		843BB66C23D765CA00DF396B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB66B23D765CA00DF396B /* SceneDelegate.swift */; };
-		843BB66E23D765CA00DF396B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB66D23D765CA00DF396B /* ContentView.swift */; };
-		843BB67023D765D200DF396B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843BB66F23D765D200DF396B /* Assets.xcassets */; };
-		843BB67323D765D200DF396B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843BB67223D765D200DF396B /* Preview Assets.xcassets */; };
-		843BB67623D765D200DF396B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BB67423D765D200DF396B /* LaunchScreen.storyboard */; };
+		843BB68A23D766F200DF396B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB68923D766F200DF396B /* AppDelegate.swift */; };
+		843BB68C23D766F200DF396B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB68B23D766F200DF396B /* SceneDelegate.swift */; };
+		843BB68E23D766F200DF396B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB68D23D766F200DF396B /* ViewController.swift */; };
+		843BB69123D766F200DF396B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BB68F23D766F200DF396B /* Main.storyboard */; };
+		843BB69323D766F400DF396B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843BB69223D766F400DF396B /* Assets.xcassets */; };
+		843BB69623D766F400DF396B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BB69423D766F400DF396B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		843BB66623D765CA00DF396B /* GuessTheNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		843BB66923D765CA00DF396B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		843BB66B23D765CA00DF396B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		843BB66D23D765CA00DF396B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		843BB66F23D765D200DF396B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		843BB67223D765D200DF396B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		843BB67523D765D200DF396B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		843BB67723D765D200DF396B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843BB68623D766F200DF396B /* GuessTheNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		843BB68923D766F200DF396B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		843BB68B23D766F200DF396B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		843BB68D23D766F200DF396B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		843BB69023D766F200DF396B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		843BB69223D766F400DF396B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		843BB69523D766F400DF396B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		843BB69723D766F400DF396B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		843BB66323D765CA00DF396B /* Frameworks */ = {
+		843BB68323D766F200DF396B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,54 +37,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		843BB65D23D765CA00DF396B = {
+		843BB67D23D766F200DF396B = {
 			isa = PBXGroup;
 			children = (
-				843BB66823D765CA00DF396B /* GuessTheNumber */,
-				843BB66723D765CA00DF396B /* Products */,
+				843BB68823D766F200DF396B /* GuessTheNumber */,
+				843BB68723D766F200DF396B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		843BB66723D765CA00DF396B /* Products */ = {
+		843BB68723D766F200DF396B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				843BB66623D765CA00DF396B /* GuessTheNumber.app */,
+				843BB68623D766F200DF396B /* GuessTheNumber.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		843BB66823D765CA00DF396B /* GuessTheNumber */ = {
+		843BB68823D766F200DF396B /* GuessTheNumber */ = {
 			isa = PBXGroup;
 			children = (
-				843BB66923D765CA00DF396B /* AppDelegate.swift */,
-				843BB66B23D765CA00DF396B /* SceneDelegate.swift */,
-				843BB66D23D765CA00DF396B /* ContentView.swift */,
-				843BB66F23D765D200DF396B /* Assets.xcassets */,
-				843BB67423D765D200DF396B /* LaunchScreen.storyboard */,
-				843BB67723D765D200DF396B /* Info.plist */,
-				843BB67123D765D200DF396B /* Preview Content */,
+				843BB68923D766F200DF396B /* AppDelegate.swift */,
+				843BB68B23D766F200DF396B /* SceneDelegate.swift */,
+				843BB68D23D766F200DF396B /* ViewController.swift */,
+				843BB68F23D766F200DF396B /* Main.storyboard */,
+				843BB69223D766F400DF396B /* Assets.xcassets */,
+				843BB69423D766F400DF396B /* LaunchScreen.storyboard */,
+				843BB69723D766F400DF396B /* Info.plist */,
 			);
 			path = GuessTheNumber;
-			sourceTree = "<group>";
-		};
-		843BB67123D765D200DF396B /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				843BB67223D765D200DF396B /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		843BB66523D765CA00DF396B /* GuessTheNumber */ = {
+		843BB68523D766F200DF396B /* GuessTheNumber */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 843BB67A23D765D200DF396B /* Build configuration list for PBXNativeTarget "GuessTheNumber" */;
+			buildConfigurationList = 843BB69A23D766F400DF396B /* Build configuration list for PBXNativeTarget "GuessTheNumber" */;
 			buildPhases = (
-				843BB66223D765CA00DF396B /* Sources */,
-				843BB66323D765CA00DF396B /* Frameworks */,
-				843BB66423D765CA00DF396B /* Resources */,
+				843BB68223D766F200DF396B /* Sources */,
+				843BB68323D766F200DF396B /* Frameworks */,
+				843BB68423D766F200DF396B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -92,25 +84,25 @@
 			);
 			name = GuessTheNumber;
 			productName = GuessTheNumber;
-			productReference = 843BB66623D765CA00DF396B /* GuessTheNumber.app */;
+			productReference = 843BB68623D766F200DF396B /* GuessTheNumber.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		843BB65E23D765CA00DF396B /* Project object */ = {
+		843BB67E23D766F200DF396B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = MaximMasov;
 				TargetAttributes = {
-					843BB66523D765CA00DF396B = {
+					843BB68523D766F200DF396B = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
-			buildConfigurationList = 843BB66123D765CA00DF396B /* Build configuration list for PBXProject "GuessTheNumber" */;
+			buildConfigurationList = 843BB68123D766F200DF396B /* Build configuration list for PBXProject "GuessTheNumber" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,47 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 843BB65D23D765CA00DF396B;
-			productRefGroup = 843BB66723D765CA00DF396B /* Products */;
+			mainGroup = 843BB67D23D766F200DF396B;
+			productRefGroup = 843BB68723D766F200DF396B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				843BB66523D765CA00DF396B /* GuessTheNumber */,
+				843BB68523D766F200DF396B /* GuessTheNumber */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		843BB66423D765CA00DF396B /* Resources */ = {
+		843BB68423D766F200DF396B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843BB67623D765D200DF396B /* LaunchScreen.storyboard in Resources */,
-				843BB67323D765D200DF396B /* Preview Assets.xcassets in Resources */,
-				843BB67023D765D200DF396B /* Assets.xcassets in Resources */,
+				843BB69623D766F400DF396B /* LaunchScreen.storyboard in Resources */,
+				843BB69323D766F400DF396B /* Assets.xcassets in Resources */,
+				843BB69123D766F200DF396B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		843BB66223D765CA00DF396B /* Sources */ = {
+		843BB68223D766F200DF396B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843BB66A23D765CA00DF396B /* AppDelegate.swift in Sources */,
-				843BB66C23D765CA00DF396B /* SceneDelegate.swift in Sources */,
-				843BB66E23D765CA00DF396B /* ContentView.swift in Sources */,
+				843BB68E23D766F200DF396B /* ViewController.swift in Sources */,
+				843BB68A23D766F200DF396B /* AppDelegate.swift in Sources */,
+				843BB68C23D766F200DF396B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		843BB67423D765D200DF396B /* LaunchScreen.storyboard */ = {
+		843BB68F23D766F200DF396B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				843BB67523D765D200DF396B /* Base */,
+				843BB69023D766F200DF396B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		843BB69423D766F400DF396B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				843BB69523D766F400DF396B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		843BB67823D765D200DF396B /* Debug */ = {
+		843BB69823D766F400DF396B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		843BB67923D765D200DF396B /* Release */ = {
+		843BB69923D766F400DF396B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,13 +280,11 @@
 			};
 			name = Release;
 		};
-		843BB67B23D765D200DF396B /* Debug */ = {
+		843BB69B23D766F400DF396B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"GuessTheNumber/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GuessTheNumber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,13 +297,11 @@
 			};
 			name = Debug;
 		};
-		843BB67C23D765D200DF396B /* Release */ = {
+		843BB69C23D766F400DF396B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"GuessTheNumber/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GuessTheNumber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -321,25 +317,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		843BB66123D765CA00DF396B /* Build configuration list for PBXProject "GuessTheNumber" */ = {
+		843BB68123D766F200DF396B /* Build configuration list for PBXProject "GuessTheNumber" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				843BB67823D765D200DF396B /* Debug */,
-				843BB67923D765D200DF396B /* Release */,
+				843BB69823D766F400DF396B /* Debug */,
+				843BB69923D766F400DF396B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		843BB67A23D765D200DF396B /* Build configuration list for PBXNativeTarget "GuessTheNumber" */ = {
+		843BB69A23D766F400DF396B /* Build configuration list for PBXNativeTarget "GuessTheNumber" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				843BB67B23D765D200DF396B /* Debug */,
-				843BB67C23D765D200DF396B /* Release */,
+				843BB69B23D766F400DF396B /* Debug */,
+				843BB69C23D766F400DF396B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 843BB65E23D765CA00DF396B /* Project object */;
+	rootObject = 843BB67E23D766F200DF396B /* Project object */;
 }
