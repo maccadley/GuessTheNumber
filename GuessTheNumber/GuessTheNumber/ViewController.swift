@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         print(game)
         attempts += 1
         attemptsText.text = "Attempts: \(attempts)"
+        //Need To refector this part.
         guard let checkIt = playerGuess.text else {return}
         let guess = Int(checkIt)
         if guess ?? 0 < game{
@@ -55,10 +56,6 @@ class ViewController: UIViewController {
         attemptsText.text = "Attempts: 0"
         playerGuess.text = "0 - 100"
     }
-    
-//    func randomNumberGenerator() -> Int{
-//        return Int(arc4random_uniform(UInt32(100)))
-//    }
     
     
 }
