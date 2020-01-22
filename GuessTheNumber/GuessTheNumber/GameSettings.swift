@@ -9,5 +9,7 @@
 import Foundation
 
 class Game {
-    
+    // Add Setting
+    // randomize range method
+    // game logic 
 }
