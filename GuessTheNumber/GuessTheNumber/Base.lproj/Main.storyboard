@@ -64,11 +64,19 @@
                                     <action selector="restartButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6AS-r8-n3S"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Attempts: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubb-n5-vUV">
+                                <rect key="frame" x="136" y="688" width="142" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="attemptsText" destination="ubb-n5-vUV" id="vNX-n6-6hH"/>
                         <outlet property="checkButton" destination="11Z-89-ejl" id="1u6-XD-d0K"/>
                         <outlet property="guessTip" destination="FOC-dT-CrR" id="qcs-HI-sUc"/>
                         <outlet property="playerGuess" destination="T5C-nE-NE8" id="T9y-8p-6rC"/>

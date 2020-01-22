@@ -11,12 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var attemptsText: UILabel!
     @IBOutlet weak var playerGuess: UITextField!
     @IBOutlet weak var guessTip: UILabel!
     @IBOutlet weak var victoryText: UILabel!
     @IBOutlet weak var restartButton: UIButton!
     @IBOutlet weak var checkButton: UIButton!
     
+    var attempts = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         victoryText.isHidden = true
@@ -27,6 +29,8 @@ class ViewController: UIViewController {
 
     @IBAction func checkNumber(_ sender: UIButton) {
         print(game)
+        attempts += 1
+        attemptsText.text = "Attempts: \(attempts)"
         guard let checkIt = playerGuess.text else {return}
         let guess = Int(checkIt)
         if guess ?? 0 < game{
@@ -47,6 +51,9 @@ class ViewController: UIViewController {
         victoryText.isHidden = true
         restartButton.isHidden = true
         checkButton.isHidden = false
+        attempts = 0
+        attemptsText.text = "Attempts: 0"
+        playerGuess.text = "0 - 100"
     }
     
 //    func randomNumberGenerator() -> Int{
