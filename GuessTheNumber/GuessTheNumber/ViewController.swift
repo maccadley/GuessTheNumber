@@ -30,14 +30,17 @@ class ViewController: UIViewController {
     @IBAction func checkNumber(_ sender: UIButton) {
         print(game)
         attempts += 1
-        attemptsText.text = "Attempts: \(attempts)"
+        //attemptsText.text = "Attempts: \(attempts)"
+        attemptsText.text = NSLocalizedString("Attempts: \(attempts)", comment: "number of attempts count")
         //Need To refector this part.
         guard let checkIt = playerGuess.text else {return}
         let guess = Int(checkIt)
         if guess ?? 0 < game{
-            guessTip.text = "HIGHER"
+            //guessTip.text = "HIGHER"
+            guessTip.text = NSLocalizedString("HIGHER", comment: "Higher?")
         } else if guess ?? 0 > game{
-                guessTip.text = "LOWER"
+                //guessTip.text = "LOWER"
+            guessTip.text = NSLocalizedString("LOWER", comment: "Lower?")
         } else if guess == game {
             victoryText.isHidden = false
             restartButton.isHidden = false
@@ -53,7 +56,8 @@ class ViewController: UIViewController {
         restartButton.isHidden = true
         checkButton.isHidden = false
         attempts = 0
-        attemptsText.text = "Attempts: 0"
+        //attemptsText.text = "Attempts: 0"
+        attemptsText.text = NSLocalizedString("Attempts: 0", comment: "When restart the game")
         playerGuess.text = "0 - 100"
     }
     

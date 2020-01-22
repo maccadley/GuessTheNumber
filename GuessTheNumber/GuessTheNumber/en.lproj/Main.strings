@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Check!"; ObjectID = "11Z-89-ejl"; */
+"11Z-89-ejl.normalTitle" = "Check!";
+
+/* Class = "UILabel"; text = "TIPS"; ObjectID = "FOC-dT-CrR"; */
+"FOC-dT-CrR.text" = "TIPS";
+
+/* Class = "UIButton"; normalTitle = "Restart!"; ObjectID = "Gd5-Nn-kgm"; */
+"Gd5-Nn-kgm.normalTitle" = "Restart!";
+
+/* Class = "UILabel"; text = "Guess The number!"; ObjectID = "QEr-1g-tYJ"; */
+"QEr-1g-tYJ.text" = "Guess The number!";
+
+/* Class = "UITextField"; text = "0-100"; ObjectID = "T5C-nE-NE8"; */
+"T5C-nE-NE8.text" = "0-100";
+
+/* Class = "UILabel"; text = "YOU WIN!"; ObjectID = "gzi-sG-QCG"; */
+"gzi-sG-QCG.text" = "YOU WIN!";
+
+/* Class = "UILabel"; text = "Attempts: 0"; ObjectID = "ubb-n5-vUV"; */
+"ubb-n5-vUV.text" = "Attempts: 0";
