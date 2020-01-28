@@ -7,11 +7,9 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
     
-    
-    @IBOutlet weak var attemptsText: UILabel!
+    @IBOutlet weak var attemptsTextLabel: UILabel!
     @IBOutlet weak var playerGuess: UITextField!
     @IBOutlet weak var guessTip: UILabel!
     @IBOutlet weak var victoryText: UILabel!
@@ -19,36 +17,51 @@ class ViewController: UIViewController {
     @IBOutlet weak var checkButton: UIButton!
     
     var attempts = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         victoryText.isHidden = true
         restartButton.isHidden = true
     }
 
-  var game = Int(arc4random_uniform(UInt32(100)))
+  var game = Int.random(in: 0...100)
 
     @IBAction func checkNumber(_ sender: UIButton) {
         print(game)
         attempts += 1
-        //attemptsText.text = "Attempts: \(attempts)"
-        attemptsText.text = NSLocalizedString("Attempts: \(attempts)", comment: "number of attempts count")
+        attemptsTextLabel.text = NSLocalizedString("Attempts: \(attempts)", comment: "number of attempts count")
         //Need To refector this part.
         guard let checkIt = playerGuess.text else {return}
-        let guess = Int(checkIt)
-        if guess ?? 0 < game{
-            //guessTip.text = "HIGHER"
-            guessTip.text = NSLocalizedString("HIGHER", comment: "Higher?")
-        } else if guess ?? 0 > game{
-                //guessTip.text = "LOWER"
+        guard let guess = Int(checkIt) else {return}
+        switch guess {
+        case let check where check < game:
+             guessTip.text = NSLocalizedString("HIGHER", comment: "Higher?")
+        case let check where check > game:
             guessTip.text = NSLocalizedString("LOWER", comment: "Lower?")
-        } else if guess == game {
+        case let check where check == game:
             victoryText.isHidden = false
             restartButton.isHidden = false
             checkButton.isHidden = true
-            game = Int(arc4random_uniform(UInt32(100)))
+            game = Int.random(in: 0...100)
             print(game)
+        default:
+            break
         }
 }
+    
+    
+    var test = "test1"
+    @IBAction func pushToSettingsButton(_ sender: UIButton) {
+       let settingVc = SettingsVC(nibName: "SettingsVC", bundle: nil)
+        settingVc.text = "not test"
+        
+        navigationController?.pushViewController(settingVc, animated: true)
+    
+    }
+    
+    
+    @IBAction func pushToStatcButton(_ sender: UIButton) {
+    }
     
     
     @IBAction func restartButtonAction(_ sender: UIButton) {
@@ -57,7 +70,7 @@ class ViewController: UIViewController {
         checkButton.isHidden = false
         attempts = 0
         //attemptsText.text = "Attempts: 0"
-        attemptsText.text = NSLocalizedString("Attempts: 0", comment: "When restart the game")
+        attemptsTextLabel.text = NSLocalizedString("Attempts: 0", comment: "When restart the game")
         playerGuess.text = "0 - 100"
     }
     
