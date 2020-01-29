@@ -10,21 +10,32 @@ import UIKit
 
 class SettingsVC: UIViewController {
     
-    var text = "test"
-    var mainController : ViewController?
+    var testText = ""
+    var fromNumber = 0
+    var toNumber = 100
+    var delegate: MainViewController!
+    @IBOutlet weak var testLabeltext: UILabel!
+    
+    @IBOutlet weak var fromTextInput: UITextField!
+    @IBOutlet weak var toTextInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        testLabeltext.text = testText
     }
     
-    @IBAction func backButton(_ sender: UIButton) {
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewBack = segue.destination as? ViewController{
-            viewBack.test = "not test"
-        }
-    }
+    
+    
+//    @IBAction func backButton(_ sender: UIButton) {
+//
+//    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let viewBack = segue.destination as? ViewController{
+//            viewBack.test = "not test"
+//        }
+//    }
 
 }
