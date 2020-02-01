@@ -6,10 +6,6 @@
 //  Copyright © 2020 MaximMasov. All rights reserved.
 //
 
-protocol ViewControllerDelegate: class {
-    func update(minNumber: Int, maxNumber: Int)
-}
-
 import UIKit
 class MainViewController: UIViewController {
     
@@ -51,7 +47,6 @@ class MainViewController: UIViewController {
     }
   
     @IBAction func checkNumber(_ sender: UIButton) {
-        print(game)
         attempts += 1
         attemptsAll += 1
         guessTip.isHidden = false
@@ -77,20 +72,15 @@ class MainViewController: UIViewController {
                 bestRow = attempts
             }
             game = Int.random(in: fromNumber...toNumber)
-            print(game)
         default:
             break
         }
 }
     
-    
-    var test = "Something"
-    
     @IBAction func pushToSettingsButton(_ sender: UIButton) {
         performSegue(withIdentifier: "settings", sender: nil)
     }
 
-    
     @IBAction func pushToStatcButton(_ sender: UIButton) {
         performSegue(withIdentifier: "statsVC", sender: nil)
     }
@@ -98,24 +88,20 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "settings"){
             let showSettingVC = segue.destination as! SettingsVC
-            showSettingVC.testText = test
             showSettingVC.delegate = self
+            showSettingVC.fromNumber = fromNumber
+            showSettingVC.toNumber = toNumber
         } else if (segue.identifier == "statsVC"){
             let showStatsVC = segue.destination as! StatsVC
-            showStatsVC.test = test
             showStatsVC.attempts = attemptsAll
             showStatsVC.gamesPlayed = gamesPlayed
             showStatsVC.bestRow = bestRow
         }
-        
     }
-    
     
     @IBAction func restartButtonAction(_ sender: UIButton) {
         restartGame()
         checkButton.isHidden = false
     }
-    
-    
 }
 

@@ -9,22 +9,21 @@
 import UIKit
 class SettingsVC: UIViewController {
     
-    var testText = ""
+    var fromNumber = 0
+    var toNumber = 100
     var delegate: MainViewController!
-    @IBOutlet weak var testLabeltext: UILabel!
-    
     @IBOutlet weak var fromTextInput: UITextField!
     @IBOutlet weak var toTextInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        testLabeltext.text = testText
+        fromTextInput.text = String(fromNumber)
+        toTextInput.text = String(toNumber)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-    
     
     @IBAction func setRangeButton(_ sender: UIButton) {
         guard let fromText = Int(fromTextInput.text ?? "0") else {return}
@@ -34,11 +33,4 @@ class SettingsVC: UIViewController {
         delegate.restartGame()
         dismiss(animated: true, completion: nil)
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        delegate.fromNumber = fromNumber
-//        delegate.toNumber = toNumber
-//    }
-    
-
 }
