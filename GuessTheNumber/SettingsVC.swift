@@ -7,12 +7,9 @@
 //
 
 import UIKit
-
 class SettingsVC: UIViewController {
     
     var testText = ""
-    var fromNumber = 0
-    var toNumber = 100
     var delegate: MainViewController!
     @IBOutlet weak var testLabeltext: UILabel!
     
@@ -29,13 +26,19 @@ class SettingsVC: UIViewController {
     }
     
     
-//    @IBAction func backButton(_ sender: UIButton) {
-//
-//    }
+    @IBAction func setRangeButton(_ sender: UIButton) {
+        guard let fromText = Int(fromTextInput.text ?? "0") else {return}
+        guard let toText = Int(toTextInput.text ?? "100") else {return}
+        delegate.fromNumber = fromText
+        delegate.toNumber = toText
+        delegate.restartGame()
+        dismiss(animated: true, completion: nil)
+    }
+    
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let viewBack = segue.destination as? ViewController{
-//            viewBack.test = "not test"
-//        }
+//        delegate.fromNumber = fromNumber
+//        delegate.toNumber = toNumber
 //    }
+    
 
 }

@@ -81,7 +81,7 @@
                                 </state>
                                 <connections>
                                     <action selector="pushToSettingsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U8P-Hq-eKw"/>
-                                    <segue destination="CIb-Y3-RUx" kind="presentation" identifier="settings" id="9EU-c3-ONT"/>
+                                    <segue destination="CIb-Y3-RUx" kind="show" identifier="settings" id="9EU-c3-ONT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qj-P2-dAI">
@@ -100,6 +100,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="C84-xw-TB3"/>
                     <connections>
                         <outlet property="attemptsTextLabel" destination="ubb-n5-vUV" id="vNX-n6-6hH"/>
                         <outlet property="checkButton" destination="11Z-89-ejl" id="1u6-XD-d0K"/>
@@ -241,6 +242,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S40-pb-2Sf">
+                                <rect key="frame" x="161" y="392" width="93" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Set Range">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setRangeButton:" destination="CIb-Y3-RUx" eventType="touchUpInside" id="Wys-Sx-djj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="YGe-wj-QXw"/>

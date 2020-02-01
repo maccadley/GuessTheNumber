@@ -6,6 +6,10 @@
 //  Copyright © 2020 MaximMasov. All rights reserved.
 //
 
+protocol ViewControllerDelegate: class {
+    func update(minNumber: Int, maxNumber: Int)
+}
+
 import UIKit
 class MainViewController: UIViewController {
     
@@ -22,20 +26,35 @@ class MainViewController: UIViewController {
     var bestRow = 0
     var fromNumber = 0
     var toNumber = 100
+    var game = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        startGame()
+        }
+
+
+    func startGame(){
+        game = Int.random(in: fromNumber...toNumber)
         victoryText.isHidden = true
         restartButton.isHidden = true
+        guessTip.isHidden = true
     }
-
-  var game = Int.random(in: 0...100)
+    
+    func restartGame(){
+        startGame()
+        attempts = 0
+        gamesPlayed += 1
+        playerGuess.text = "\(fromNumber)-\(toNumber)"
+        playerGuess.isSelected = false
+        attemptsTextLabel.text = NSLocalizedString("Attempts: 0", comment: "When restart the game")
+    }
   
-
     @IBAction func checkNumber(_ sender: UIButton) {
         print(game)
         attempts += 1
         attemptsAll += 1
+        guessTip.isHidden = false
         attemptsTextLabel.text = NSLocalizedString("Attempts: \(attempts)", comment: "number of attempts count")
         //Need To refector this part.
         guard let checkIt = playerGuess.text else {return}
@@ -43,18 +62,21 @@ class MainViewController: UIViewController {
         switch guess {
         case let check where check < game:
              guessTip.text = NSLocalizedString("HIGHER", comment: "Higher?")
+        case let check where check > toNumber || check < fromNumber:
+        guessTip.text = NSLocalizedString("Out of Range", comment: "out?")
         case let check where check > game:
             guessTip.text = NSLocalizedString("LOWER", comment: "Lower?")
         case let check where check == game:
             victoryText.isHidden = false
             restartButton.isHidden = false
             checkButton.isHidden = true
+            guessTip.isHidden = true
             if bestRow == 0 {
                 bestRow = attempts
             } else if bestRow > attempts{
                 bestRow = attempts
             }
-            game = Int.random(in: 0...100)
+            game = Int.random(in: fromNumber...toNumber)
             print(game)
         default:
             break
@@ -65,17 +87,11 @@ class MainViewController: UIViewController {
     var test = "Something"
     
     @IBAction func pushToSettingsButton(_ sender: UIButton) {
-        // Don't get why this doesn't pass data. better use Segue, 'cause it works
-//       let settingVc = SettingsVC(nibName: "SettingsVC", bundle: nil)
-//        settingVc.testText = test
-//        navigationController?.pushViewController(settingVc, animated: true)
         performSegue(withIdentifier: "settings", sender: nil)
     }
 
     
     @IBAction func pushToStatcButton(_ sender: UIButton) {
-//        let statsVc = StatsVC(nibName: "StatsVC", bundle: nil)
-//        navigationController?.pushViewController(statsVc, animated: true)
         performSegue(withIdentifier: "statsVC", sender: nil)
     }
     
@@ -96,14 +112,8 @@ class MainViewController: UIViewController {
     
     
     @IBAction func restartButtonAction(_ sender: UIButton) {
-        victoryText.isHidden = true
-        restartButton.isHidden = true
+        restartGame()
         checkButton.isHidden = false
-        attempts = 0
-        gamesPlayed += 1
-        //attemptsText.text = "Attempts: 0"
-        attemptsTextLabel.text = NSLocalizedString("Attempts: 0", comment: "When restart the game")
-        playerGuess.text = "0 - 100"
     }
     
     
